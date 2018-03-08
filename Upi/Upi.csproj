@@ -107,8 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Insertar.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="sql_script\db_creation_empleados.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +120,13 @@
     </Compile>
     <Compile Include="Insertar.aspx.designer.cs">
       <DependentUpon>Insertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
