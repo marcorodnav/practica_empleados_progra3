@@ -12,8 +12,11 @@
     
         INGRESO DE EMPLEADOS<br />
         <br />
-        NOMBRE:
-        <asp:TextBox ID="idTextNombre" runat="server"></asp:TextBox>
+        ID_EMPLEADO:
+        <asp:TextBox ID="IdTextIdEmpleado" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        NOMBRE: <asp:TextBox ID="idTextNombre" runat="server"></asp:TextBox>
         <br />
         <br />
         DIRECCION:
@@ -23,6 +26,7 @@
         <asp:Button ID="idBtnInsertar" runat="server" OnClick="idBtnInsertar_Click" Text="Insertar" />
         <br />
         <br />
+        <asp:Label ID="idLabelExito" runat="server"></asp:Label>
         <br />
         <asp:HyperLink ID="idLinkRegresar" runat="server">Regresar</asp:HyperLink>
     

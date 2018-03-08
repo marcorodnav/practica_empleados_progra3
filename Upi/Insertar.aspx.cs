@@ -19,6 +19,11 @@ namespace Upi
         {
             string connectionStringEmpleados = System.Configuration.ConfigurationManager.ConnectionStrings["ConnStringDb1"].ConnectionString;
             SqlConnection conexion = new SqlConnection(connectionStringEmpleados);
+            conexion.Open();
+            SqlCommand comando = new SqlCommand("exec PROCEDIMIENTO_INSERTAR_EMPLEADO " + int.Parse(IdTextIdEmpleado.Text) +", '"+idTextNombre.Text+"', '"+idTextDireccion.Text+"'",conexion);
+            comando.ExecuteNonQuery();
+            conexion.Close();
+            idLabelExito.Text = "Empleado creado!";
         }
     }
 }
